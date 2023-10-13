@@ -48,19 +48,24 @@
 
 .carousel-caption {
   bottom: 5rem;
-  left: 53%;
+  left: 44%;
   width: 40%;
+  & p {
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 565px) {
   .carousel-caption {
     position: absolute;
-    right: 15%;
     bottom: 1.25rem;
-    left: 15%;
+    left: 10%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     width: 80%;
+  }
+  .text-end {
+    text-align: center !important;
   }
 }
 
@@ -173,7 +178,7 @@
   & textarea {
     font-size: 1.5em;
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     border-radius: 5px;
     padding: 1rem 0 0 1rem;
     border-color: #d2d3d5;
@@ -210,11 +215,8 @@
 
 footer {
   background: #0F2027;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #1e5372, #1e445b, #1c3643);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #1e5372, #1e445b, #1c3643);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   height: 100%;
   padding: 1.5rem;
