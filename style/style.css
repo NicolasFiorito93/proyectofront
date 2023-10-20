@@ -4,12 +4,15 @@
   --bgbotton: #409b56;
 }
 
-* {
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navbar {
@@ -156,7 +159,7 @@
     text-decoration: dotted;
   }
 
-  .container-asd {
+  .formu {
     width: 50%;
 
   }
@@ -198,10 +201,10 @@
 }
 
 @media (max-width: 768px) {
-  .container-form .container-asd {
+  .container-form .formu {
     display: block;
     width: 95%;
-
+    justify-content: center;
     .datos {
       flex-flow: column nowrap;
     }
@@ -220,8 +223,86 @@ footer {
   text-align: center;
   height: 100%;
   padding: 1.5rem;
+  margin-top: auto;
   & a {
     color: var(--textcolor) !important;
   }
-  
+
+}
+
+
+.container-card {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.cards {
+  margin: 1rem 1rem;
+  padding: 1rem;
+  border: solid 2px blue;
+  border-radius: 0;
+  width: 15vw;
+  height: 22vh;
+  & span {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .docu {
+    color: gray;
+  }
+}
+
+.trainee {
+  border-color: lightskyblue;
+}
+
+.junior {
+  border-color: gold;
+}
+
+@media (max-width: 1200px){
+  .container-card {
+    justify-content: space-around;
+  }
+  .cards {
+    width: 25%;
+  }
+  .formu {
+    min-width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .cards {
+    width: 75%;
+  }
+}
+
+.container-form form {
+  width: 50%;
+
+  & input {
+    width: 100%;
+    padding:0.7rem;
+  }
+
+  .total {
+    background-color: lightblue;
+    font-size: 1.2em;
+    padding: 1rem;
+  }
+
+  .row {
+    margin: 1rem 0;
+  }
 }
