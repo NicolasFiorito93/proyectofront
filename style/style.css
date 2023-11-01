@@ -208,6 +208,9 @@ body {
     .datos {
       flex-flow: column nowrap;
     }
+    .name {
+      margin-bottom: .5em;
+    }
 
     & input {
       width: 100%;
@@ -304,5 +307,9 @@ footer {
 
   .row {
     margin: 1rem 0;
+  }
+
+  .form-select {
+    padding: 0.7em;
   }
 }
